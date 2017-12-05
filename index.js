@@ -32,7 +32,7 @@ class Passenger {
     }
 
     drivers() {
-      console.log(this.trips().filter(trip => trip.driverId))
+      console.log(this.trips().filter(trip => trip.driverId > 0))
       return(this.trips().driverId)
     }
 
