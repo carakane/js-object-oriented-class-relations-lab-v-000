@@ -15,7 +15,8 @@ class Driver {
 
   passengers() {
     console.log(this.trips().forEach(trip => console.log(trip.passengerId)))
-    console.log(this.trips().forEach(trip => store.passengers.find(passenger => passenger.id === trip.passengerId)))
+    console.log(this.trips().forEach(function(trip) {
+      store.passengers.find(passenger => passenger.id === trip.passengerId))}
     // return(store.passengers.find(passenger => passenger.id === this.trips()[0].passengerId))
   }
 }
