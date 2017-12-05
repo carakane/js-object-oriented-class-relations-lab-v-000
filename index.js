@@ -43,6 +43,7 @@ let tripId = 0
 
 class Trip {
   constructor(driver, passenger) {
+    debugger
     !!driver.id ? this.driverId = driver.id : null
     !!passenger.id ? this.passengerId = passenger.id : null
     this.id = ++tripId
