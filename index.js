@@ -1,9 +1,12 @@
+let store = {drivers: [], passengers: [], trips: []}
+
 let driverId = 0;
 
 class Driver {
   constructor(name) {
     this.name = name
     this.id = ++driverId
+    store.drivers.push(this)
   }
 
   trips() {
@@ -21,6 +24,7 @@ class Passenger {
     constructor(name) {
       this.name = name
       this.id = ++passengerId
+      store.passengers.push(this)      
     }
 
     trips() {
@@ -40,6 +44,7 @@ class Trip {
     this.driverId = driverId
     this.passengerId = passengerId
     this.id = ++tripId
+    store.trips.push(this)  
   }
 
   driver() {
