@@ -32,7 +32,7 @@ class Passenger {
     }
 
     drivers() {
-      return(trips())
+      return(this.trips())
     }
 
 }
