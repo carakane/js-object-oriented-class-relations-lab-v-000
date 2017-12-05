@@ -32,6 +32,7 @@ class Passenger {
     }
 
     drivers() {
+      console.log(this.trips())
       return(this.trips().driverId)
     }
 
