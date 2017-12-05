@@ -48,10 +48,10 @@ class Trip {
   }
 
   driver() {
-    return(this.driver)
+    return(driver)
   }
 
   passenger() {
-    return(this.passenger)  
+    return(passenger)  
   }
 }
