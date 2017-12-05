@@ -41,6 +41,7 @@ let tripId = 0
 
 class Trip {
   constructor(driver, passenger) {
+    console.log(driver)
     this.driverId = driver
     this.passengerId = passenger
     this.id = ++tripId
@@ -52,6 +53,6 @@ class Trip {
   }
 
   passenger() {
-    return(this.passengerId)  
+    return(this.passengerId)
   }
 }
