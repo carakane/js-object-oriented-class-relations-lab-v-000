@@ -14,12 +14,7 @@ class Driver {
   }
 
   passengers() {
-    debugger
-    console.log(this.trips().forEach(trip => trip.passenger()))
-    // console.log(this.trips().forEach(trip => store.passengers.find(passenger => passenger.id === trip.passengerId)))
-    // return(store.passengers.find(passenger => passenger.id === this.trips()[0].passengerId))
-    // return(store.passengers.find(passenger => passenger.id === this.trips().forEach(trip => trip.passengerId)))
-  }
+    this.trips().map(trip => trip.passenger())  }
 }
 
 let passengerId = 0
@@ -36,7 +31,9 @@ class Passenger {
     }
 
     drivers() {
-      return(store.drivers.find(driver => driver.id === this.trips()[0].driverId))
+      this.trips().map(trip => trip.driver())  }
+      
+      // return(store.drivers.find(driver => driver.id === this.trips()[0].driverId))
     }
 
 }
