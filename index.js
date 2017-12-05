@@ -48,7 +48,7 @@ class Trip {
   }
 
   driver() {
-
+    return(this.driver)
   }
 
   passenger() {
