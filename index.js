@@ -15,7 +15,7 @@ class Driver {
 
   passengers() {
     console.log(this.trips().forEach(trip => trip.passenger()))
-    console.log(this.trips().forEach(trip => store.passengers.find(passenger => passenger.id === trip.passengerId)))
+    // console.log(this.trips().forEach(trip => store.passengers.find(passenger => passenger.id === trip.passengerId)))
     // return(store.passengers.find(passenger => passenger.id === this.trips()[0].passengerId))
   }
 }
@@ -42,7 +42,7 @@ class Passenger {
 let tripId = 0
 
 class Trip {
-  constructor(driver, passenger) {
+  constructor() {
     this.driverId = driver.id
     this.passengerId = passenger.id
     this.id = ++tripId
