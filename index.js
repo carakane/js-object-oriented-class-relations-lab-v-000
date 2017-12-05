@@ -32,7 +32,7 @@ class Passenger {
     }
 
     drivers() {
-      console.log(this.trips()[0].driverId)
+      console.log(store.drivers.filter(driver => driver.id === this.trips()[0].driverId))
       // return(this.trips().driverId)
     }
 
