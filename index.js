@@ -14,6 +14,7 @@ class Driver {
   }
 
   passengers() {
+    console.log(this.trips())
     return(store.passengers.find(passenger => passenger.id === this.trips()[0].passengerId))  
   }
 }
