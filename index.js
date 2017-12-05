@@ -32,8 +32,7 @@ class Passenger {
     }
 
     drivers() {
-      console.log(store.drivers.find(driver => driver.id === this.trips()[0].driverId))
-      // return(this.trips().driverId)
+      return(store.drivers.find(driver => driver.id === this.trips()[0].driverId))
     }
 
 }
