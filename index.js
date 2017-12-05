@@ -14,7 +14,7 @@ class Driver {
   }
 
   passengers() {
-
+    return(store.passengers.find(passenger => passenger.id === this.trips()[0].passengerId))  
   }
 }
 
