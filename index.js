@@ -32,7 +32,7 @@ class Passenger {
     }
 
     drivers() {
-      return(this.trips())
+      return(this.trips().driverId)
     }
 
 }
