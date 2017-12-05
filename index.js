@@ -32,7 +32,7 @@ class Passenger {
 
     drivers() {
       this.trips().map(trip => trip.driver())  }
-      
+
       // return(store.drivers.find(driver => driver.id === this.trips()[0].driverId))
     }
 
