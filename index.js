@@ -10,7 +10,7 @@ class Driver {
   }
 
   trips() {
-
+    return(store.trips.filter(trip => trip.driverId === this.id))
   }
 
   passengers() {
@@ -32,8 +32,8 @@ class Passenger {
     }
 
     drivers() {
-      console.log(this.trips().filter(trip => trip.driverId > 0))
-      return(this.trips().driverId)
+      // console.log(this.trips().filter(trip => trip.driverId))
+      // return(this.trips().driverId)
     }
 
 }
